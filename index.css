@@ -1,6 +1,16 @@
+html{
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+
 nav{
     background-color: orange;
     margin: 0;
+    display: flex;
+    justify-content: flex-end;
+    
+    box-shadow: 0 2px 0 rgba(0, 0, 0, 0.4);
 }
 
 body{
@@ -8,7 +18,22 @@ body{
     margin: 0;
 }
 
+.nav-list{
+    display: flex;
+    
+}
+
+li{
+    list-style-type: none;
+}
+
 #welcome-section{
     background-color: whitesmoke;
 
+}
+section{ 
+    scroll-behavior: smooth;
+}
+.nav-list a:hover {
+background: blue;
 }
