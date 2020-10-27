@@ -1,5 +1,5 @@
-import { films } from './films.js'
-import { people } from './people.js'
+import { films } from '../Star Wars/films.js'
+
 
 
 
