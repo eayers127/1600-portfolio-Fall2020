@@ -1,4 +1,5 @@
 import {people} from '../Star Wars/people.js'
+import {removeChildren, getLastNumber} from '../utils/index.js'
 
 const mainContent = document.querySelector('#main')
 
@@ -24,10 +25,25 @@ mainHeader.appendChild(otherButton)
 
 
 
-const maleCharacters = people.filter(person => person.gender === 'male')
+const maleCharacters = people.filter((person) => person.gender === 'male')
+
+/*maleButton.addEventListener('click', (event) => {
+    maleCharacters.forEach((element) => {
+        const charFigure = document.createElement('figure')
+        const charImg = document.createElement('img')
+        charImg.src = `https://starwars-visualguide.com/assets/img/characters/10.jpg`
+        const charCaption = document.createElement('figcaption')
+        charCaption.textContent = `Luke Skywalker`
+
+        charFigure.appendChild(charImg)
+        charFigure.appendChild(charCaption)
+
+        mainContent.appendChild(charFigure)
+    })
+})*/
 
 
-const femaleCharacters = people.filter(person => person.gender === 'female')
+const femaleCharacters = people.filter((person) => person.gender === 'female')
 
 
 const otherCharacters = people.filter((thing) => {
@@ -43,37 +59,37 @@ if {
 
 
 
-maleButton.addEventListener('click', () event => populateDOM{maleCharacters})
+maleButton.addEventListener('click', () => populateDOM(maleCharacters))
    
-femaleButton.addEventListener('click', () event => populateDOM{femaleCharacters})
+femaleButton.addEventListener('click', () => populateDOM(femaleCharacters))
 
-otherButton.addEventListener('click', () event => populateDOM{otherCharacters})
-
-
+otherButton.addEventListener('click', () => populateDOM(otherCharacters))
 
 
 
-function populateDOM(characters) => {
-    
-    removeChildren
-    const charFigure = document.createElement('figure')
-    const charImg = document.createElement('img')
-    charImg.src=`https://starwars-visualguide.com/assets/img/characters/1.jpg`
-    const charCaption = document.createElement('figcaption')
-    charCaption.textContent = 'Luke Skywalker'
+(characters) => {
+    removeChildren(mainContent)
+    characters.forEach((element) => {
+        
+        const charFigure = document.createElement('figure')
+        const charImg = document.createElement('img')
+        charImg.src = `https://starwars-visualguide.com/assets/img/characters/${charNum}.jpg`
+        charImg.addEventListener('error', () => charImg.hidden = true)
+        const charCaption = document.createElement('figcaption')
+        charCaption.textContent = element.name
 
-    charFigure.appendChild(charImg)
-    charFigure.appendChild(charCaption)
+        charFigure.appendChild(charImg)
+        charFigure.appendChild(charCaption)
 
-    mainContent.appendChild(charFigure)
-  })
+        mainContent.appendChild(charFigure)
+    })
 
 
-let theUrl = "https://swapi.co/api/people/2/"
+    let theUrl = "https://swapi.co/api/people/2/"
 
-function getLastNumber(url) {
-    let end = url.l
+
+
+    getLastNumber(theUrl)
 }
 
-getLastNumber(theUrl)
 
