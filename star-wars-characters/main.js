@@ -1,4 +1,4 @@
-import {people} from '../Star Wars/people.js'
+import { people } from '../StarWars/people.js'
 import {removeChildren, getLastNumber} from '../utils/index.js'
 
 const mainContent = document.querySelector('#main')
@@ -47,15 +47,14 @@ const femaleCharacters = people.filter((person) => person.gender === 'female')
 
 
 const otherCharacters = people.filter((thing) => {
-if {
+if (
     thing.gender === 'n/a' ||
     thing.gender === 'none' ||
     thing.gender === 'hermaphrodite'
+)  {
     return thing
-
-}
-
-}
+   }
+})
 
 
 
@@ -67,12 +66,13 @@ otherButton.addEventListener('click', () => populateDOM(otherCharacters))
 
 
 
-(characters) => {
+function populateDOM(characters){
     removeChildren(mainContent)
     characters.forEach((element) => {
         
         const charFigure = document.createElement('figure')
         const charImg = document.createElement('img')
+        let charNum = getLastNumber(element.url)
         charImg.src = `https://starwars-visualguide.com/assets/img/characters/${charNum}.jpg`
         charImg.addEventListener('error', () => charImg.hidden = true)
         const charCaption = document.createElement('figcaption')
@@ -84,12 +84,6 @@ otherButton.addEventListener('click', () => populateDOM(otherCharacters))
         mainContent.appendChild(charFigure)
     })
 
-
-    let theUrl = "https://swapi.co/api/people/2/"
-
-
-
-    getLastNumber(theUrl)
 }
 
 

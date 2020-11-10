@@ -1,4 +1,4 @@
-import { starships } from '../Star Wars/starships.js'
+import { starships } from '../StarWars/starships.js'
 import { removeChildren, getLastNumber} from '../utils/index.js'
 
 
@@ -6,9 +6,10 @@ const nav = document.querySelector('.nav')
 const navList = document.querySelector('.navList')
 const shipView = document.querySelector('.main')
 
-const dialog =document.querySelector('.modal')
+const dialog = document.querySelector('.modal')
 const closeButton = document.querySelector('.modal-close')
 const modalBackground = document.querySelector('.modal-background')
+
 closeButton.addEventListener('click', () => {
     dialog.classList.toggle("is-active")
 })
@@ -43,7 +44,7 @@ function populateShipView(shipData) {
     removeChildren(shipView)
     let shipImage = document.createElement('img')
     let shipNum = getLastNumber(shipData.url)
-    shipImage.src = `https:starwars-visualguide.com/assets/img/starships/${shipNum}.jpg`
+    shipImage.src = `https://starwars-visualguide.com/assets/img/starships/${shipNum}.jpg`
     shipImage.addEventListener('error', () => { 
     shipImage.hidden = true
     dialog.classList.toggle("is-active")
