@@ -3,6 +3,8 @@ import {removeChildren, getLastNumber} from '../utils/index.js'
 
 const mainContent = document.querySelector('#main')
 
+populateDOM(people)
+
 const mainHeader = document.createElement('header')
 mainHeader.className = 'mainHeader'
 document.body.insertBefore(mainHeader, mainContent)
@@ -25,7 +27,7 @@ mainHeader.appendChild(otherButton)
 
 
 
-const maleCharacters = people.filter((person) => person.gender === 'male')
+
 
 /*maleButton.addEventListener('click', (event) => {
     maleCharacters.forEach((element) => {
@@ -43,6 +45,8 @@ const maleCharacters = people.filter((person) => person.gender === 'male')
 })*/
 
 
+const maleCharacters = people.filter((person) => person.gender === 'male')
+
 const femaleCharacters = people.filter((person) => person.gender === 'female')
 
 
@@ -55,16 +59,6 @@ if (
     return thing
    }
 })
-
-
-
-maleButton.addEventListener('click', () => populateDOM(maleCharacters))
-   
-femaleButton.addEventListener('click', () => populateDOM(femaleCharacters))
-
-otherButton.addEventListener('click', () => populateDOM(otherCharacters))
-
-
 
 function populateDOM(characters){
     removeChildren(mainContent)
@@ -85,5 +79,18 @@ function populateDOM(characters){
     })
 
 }
+
+
+
+
+maleButton.addEventListener('click', () => populateDOM(maleCharacters))
+   
+femaleButton.addEventListener('click', () => populateDOM(femaleCharacters))
+
+otherButton.addEventListener('click', () => populateDOM(otherCharacters))
+
+
+
+
 
 

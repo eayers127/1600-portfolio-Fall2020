@@ -32,7 +32,7 @@ function populateNav(starships) {
 
 
         let listItem = document.createElement('li')
-        listItem.textContent = starship.name
+        listItem.textContent = starship.name 
 
         anchorWrap.appendChild(listItem)
         navList.appendChild(anchorWrap)
@@ -55,4 +55,3 @@ function populateShipView(shipData) {
 }
 
 populateNav(starships)
-

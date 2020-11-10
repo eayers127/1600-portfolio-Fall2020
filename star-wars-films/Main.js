@@ -1,4 +1,4 @@
-import { films } from '../Star Wars/films.js'
+import { films } from '../StarWars/films.js'
 
 
 
