@@ -18,8 +18,6 @@ figure{
 figcaption {
     background-color: thistle;
     text-align: center;
+    padding: 20%;
 }
  
-figure:hover {
-
-}
