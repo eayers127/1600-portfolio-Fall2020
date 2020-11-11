@@ -3,6 +3,15 @@
     box-sizing: border-box;
 }
 
+header{
+text-align: center;
+
+}
+
+body{
+background-color: darkgrey;
+
+}
 
 main {
     display: flex;
@@ -16,8 +25,9 @@ figure{
 }
 
 figcaption {
-    background-color: thistle;
+    background-color: whitesmoke;
     text-align: center;
-    padding: 20%;
+    padding: 5%;
+    font-size: 1.25rem;
 }
  
