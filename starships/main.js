@@ -54,4 +54,29 @@ function populateShipView(shipData) {
 
 }
 
+
+
 populateNav(starships)
+
+function addStarField(element, numStars) {
+    element.style.setProperty('background-color', 'black')
+    for (let i = 0; i < numStars; i++){
+        let star = document.createElement('div')
+        star.style.setProperty('position', 'absolute')
+        star.style.setProperty('width', '2px')
+        star.style.setProperty('height', '2px')
+        star.style.setProperty('background-color', 'white')
+        let xy = getRandomPosition()
+    }
+}
+
+function getRandomPosition(){
+    let y = document.body.scrollHeight
+    let x = document.body.scrollWidth
+
+    
+    return [randomX, randomY]
+
+}
+
+addStarField(document.querySelector('body'), 100)

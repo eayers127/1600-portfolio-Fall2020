@@ -1,5 +1,5 @@
 import { films } from '../StarWars/films.js'
-import { getLastNumber } from '..utils/index.js'
+import { getLastNumber} from '../utils/index.js'
 
 
 
@@ -22,7 +22,7 @@ for (let step=0; step < 7; step++) {
     figImg.src = `https://starwars-visualguide.com/assets/img/films/${step + 1}.jpg`
     let figCaption = document.createElement('figCaption')
     
-    const foundFilm = films.find(film => getLastNumber(film.url) == (step + 1))
+    const foundFilm = films.find(film => parseInt(getLastNumber(film.url)) === (step + 1))
     figCaption.textContent = foundFilm.title
     
 
