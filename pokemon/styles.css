@@ -38,7 +38,7 @@
   }
 
   .card__face--front {
-    background: cyan;
+    background: #ccc;
     border: 1px solid #FFCB05;
     border-radius: 30px;
     text-align: center;
