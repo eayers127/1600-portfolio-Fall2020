@@ -1,20 +1,33 @@
 *{
-    margin: 0;
+    margin: 0px;
     box-sizing: border-box;
 }
 
-.pokemonGrid {
+header{
+text-align: center;
+
+}
+
+body{
+background-color: darkgrey;
+
+}
+
+main {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
-
+    justify-content: center;
 }
 
-.scene{
-    width: 200px;
-    height: 260px;
-    border: 1px solid #CCC;
-    margin: 10px;
-    perspective: 600px;
+figure{
+    margin: 1rem;
+    
 }
 
+figcaption {
+    background-color: whitesmoke;
+    text-align: center;
+    padding: 5%;
+    font-size: 1.25rem;
+}
+ 
