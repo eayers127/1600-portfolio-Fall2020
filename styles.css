@@ -1,0 +1,33 @@
+*{
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+header{
+text-align: center;
+
+}
+
+body{
+background-color: darkgrey;
+
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+figure{
+    margin: 1rem;
+    
+}
+
+figcaption {
+    background-color: whitesmoke;
+    text-align: center;
+    padding: 5%;
+    font-size: 1.25rem;
+}
+ 
