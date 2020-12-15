@@ -5,6 +5,10 @@
     padding: 0;
 }
 
+main{
+    font-family: 'Noto Sans TC', sans-serif;
+}
+
 
 html{
     box-sizing: border-box;
@@ -80,9 +84,11 @@ li{
     font-size: 2rem;
     width: 100%;
     background-color: #fff;
+   
 }
 p{
 color: #253746;
+font-family: 'Noto Sans TC', sans-serif;
 }
 
 
