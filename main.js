@@ -94,3 +94,8 @@ otherButton.addEventListener('click', () => populateDOM(otherCharacters))
 
 
 
+const reloadButton = document.createElement('button')
+reloadButton.textContent = 'Reload All Characters'
+mainHeader.appendChild(reloadButton)
+
+reloadButton.addEventListener('click', () => populateDOM(people))
