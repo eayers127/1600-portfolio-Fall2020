@@ -1,0 +1,53 @@
+:root {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+
+    background-color: black;
+}
+.main{
+    margin: 5rem, 5rem, 0, 15rem;
+       
+
+
+}
+
+header, footer{
+display: flex;
+justify-content: center;
+font-size: 1.75rem;
+text-align: center;
+color: white;
+}
+
+
+
+a{
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+
+li{
+    list-style-type: none;
+}
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+img{
+    padding-right: 30%;
+}
+
+a:hover{
+    font-size: larger;
+    color: white;
+}
+
+a:focus{
+    font-size: larger;
+    color: white;
+}
