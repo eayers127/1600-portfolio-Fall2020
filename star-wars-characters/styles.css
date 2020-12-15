@@ -1,0 +1,49 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+.mainHeader {
+    display: flex;
+    justify-content: space-around;
+    margin: 2rem;
+    background-color: skyblue;
+}
+
+
+#main{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background-color: grey
+}
+
+figure {
+    margin: 1rem;
+}
+
+figure img {
+    max-height: 12rem;
+}
+figcaption{
+    text-align: center;
+    color:white;
+    font-family: 'Inconsolata', monospace;
+}
+
+button{
+    margin: 10px;
+    padding: 5px;
+    font-family: 'Inconsolata', monospace;
+    font-size: 1.5rem;
+}
+
+button:hover{
+    cursor: pointer;
+    color: white;
+    background-color: darkgrey;
+}
+
+
+
